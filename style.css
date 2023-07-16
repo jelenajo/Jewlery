@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+:root {
+    --orange:#ff9505;
+    --orangeRed:#ec4E20;
+    --gray: #353531;
+    --lightGray: #eee;
+    --white: #fff;
+    --black: #000;
+    --transition: 3s ease;
+
+}
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    color: var(--gray);
+}
+.py-5 {
+    padding: 120px 0 !important;
+}
+h2::after{
+    content: "";
+    display: block;
+    margin: 30px auto;
+    width: 100px;
+    height: 4px;
+    background: var(--orange);
+}
+/***NAV BAR**/
+.navbar {
+    background: rgba(53,53, 49, 0.9) !important;
+}
+.navbar-brand {
+    color: var(--orange) !important;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.navbar-brand:hover {
+    color: var(--orangeRed) !important;
+    transition: var(--transition);
+}
+.navbar .navbar-nav .nav-link {
+    color: var(--white);
+    text-transform: uppercase;
+}
+.navbar .navbar-nav .nav-link:hover{
+    color: var(--orange);
+}
+.navbar-toggler {
+    background: var(--orange)!important;
+}
+/***Header**/
+header {
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),url(img/header.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 350px 0;
+    margin-bottom: 0;
+}
+.btn-warning {
+    background: var(--orange);
+    border: var(--orange);
+}
+.btn-warning:hover {
+    background: var(--orangeRed);
+    border: var(--orangeRed);
+}
+/*About uS**/
+/*Numbers**/
+#numbers {
+    background: var(--gray);
+    color: var(--white);
+    text-align: center;
+}
+#numbers i {
+    color: var(--orange);
+    font-size: 5rem;
+    margin-bottom: 30px;
+}
+#numbers h3 {
+    color: var(--lightGray);
+    font-size: 2.2rem;
+}
+#numbers h4 {
+    color: var(--orange);
+    font-size: 1.2rem;
+}
+/*Portfolio*/
+#portfolio .card {
+    position: relative;
+    margin-bottom: 2em;
+}
+#portfolio .card-text {
+    padding: 30px;
+}
+#portfolio .corner-text {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: var(--orange);
+    color: var(--white);
+}
+#portfolio .corner-text p {
+    margin-bottom: 0;
+    padding: 10px;
+    font-weight: 700;
+}
+#portfolio img {
+    transition: transform 3s ease-in-out;
+}
+#portfolio .holder {
+    overflow: hidden;
+}
+#portfolio .holder:hover{
+    transform: scale(1.1);
+}
+/**Project*/
+#projects {
+    background: var(--lightGray);
+}
+#projects img {
+    width: 800px;
+    height: 600px;
+}
+/**Our Teams*/
+#team {
+    text-align: center;
+}
+#team img {
+    border-radius: 50%;
+}
+/*Footer*/
+footer {
+    background: var(--orange);
+}
+footer a {
+    color: var(--gray);
+    margin: 10px;
+    font-size: 2.4rem;
+}
+footer a:hover {
+    color: var(--white);
+    transition: 0.7s;
+}
+footer i:hover{
+    animation: footer 0.7s ease;
+}
+@keyframes footer {
+    100% {
+        transform: rotate(360deg);
+    }
+    }
+footer h3 {
+    margin-top: 20px;
+}   
+footer h2::after {
+    display: block;
+    content: "";
+    margin: 30px auto;
+    width: 100px;
+    height: 5px;
+    background: var(--gray);
+}
+/*Media queri**/ 
+@media (max-width: 768px){
+    .header {
+        padding: 150px 20px;
+    }
+    .header h1 {
+        font-size: 3rem;
+    }
+    h2 {
+        font-size: 2.5rem !important;
+    }
+}
+
